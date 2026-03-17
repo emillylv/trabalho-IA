@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onde ir: BH | Sistema Especialista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+<header>
+    <div class="header-content">
+        <div class="logo-area">
+            <span class="badge">O ROLÊ</span>
+            <h1>Onde ir <span class="bh-modern">BH</span></h1>
+        </div>
+        <p>Seu guia especialista de Belo Horizonte</p>
+    </div>
+</header>
+
+        <main>
+            <section class="filters">
+                <h3>1. Com quem você vai?</h3>
+                <div class="filter-group" data-category="companhia">
+                    <button class="chip" data-value="date">Date</button>
+                    <button class="chip" data-value="amigos">Amigos</button>
+                    <button class="chip" data-value="familia">Família</button>
+                </div>
+
+                <h3>2. Qual o orçamento?</h3>
+                <div class="filter-group" data-category="orcamento">
+                    <button class="chip" data-value="gratis">Gratuito</button>
+                    <button class="chip" data-value="acessivel">Acessível</button>
+                    <button class="chip" data-value="caro">Caro</button>
+                </div>
+
+                <h3>3. O que não pode faltar?</h3>
+                <div class="filter-group" data-category="vibe">
+                    <button class="chip" data-value="musica">Música</button>
+                    <button class="chip" data-value="comida">Comida</button>
+                    <button class="chip" data-value="alternativo">Alternativo</button>
+                    <button class="chip" data-value="bebida">Bebida</button>
+                </div>
+            </section>
+
+            <section class="results-area">
+                <button id="btn-inferir" class="primary-btn">Realizar Inferência</button>
+                
+                <div id="resultado" class="hidden">
+                    <h2>Sugestão: <span id="local-nome"></span></h2>
+                    <p id="local-desc"></p>
+                    <div class="explanation">
+                        <h4>Raciocínio do Sistema:</h4>
+                        <ul id="log-explicacao"></ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="engine.js"></script>
+</body>
+</html>
